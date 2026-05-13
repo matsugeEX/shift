@@ -1,0 +1,5 @@
+[credential]
+	helper = "!f() { /home/node/.vscode-server/bin/974500e64f0d1cfdf7c9821a2a51c2cb3bf0e561/node /tmp/vscode-remote-containers-7b5f33c3-c85d-4274-8fa9-dcc4770f41ef.js git-credential-helper $*; }; f"
+[user]
+	name = matsugeEX
+	email = matsuge0727@icloud.com

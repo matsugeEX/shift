@@ -1,0 +1,23 @@
+2026-03-15 09:44:26.051 [info] [main] ログ レベル: Info
+2026-03-15 09:44:26.051 [info] [main] Git の検証が検出されました: "git"
+2026-03-15 09:44:26.051 [info] [main] "git" から Git "2.39.5" を使用しています
+2026-03-15 09:44:26.051 [info] [Model][doInitialScan] Initial repository scan started
+2026-03-15 09:44:26.051 [info] > git rev-parse --show-toplevel [3ms]
+2026-03-15 09:44:26.051 [info] fatal: not a git repository (or any parent up to mount point /workspaces)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-03-15 09:44:26.051 [info] > git rev-parse --show-toplevel [10ms]
+2026-03-15 09:44:26.051 [info] fatal: not a git repository (or any parent up to mount point /workspaces)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-03-15 09:44:26.051 [info] > git rev-parse --show-toplevel [0ms]
+2026-03-15 09:44:26.051 [info] fatal: not a git repository (or any parent up to mount point /workspaces)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-03-15 09:44:26.051 [info] > git rev-parse --show-toplevel [15ms]
+2026-03-15 09:44:26.051 [info] fatal: not a git repository (or any parent up to mount point /workspaces)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-03-15 09:44:26.051 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)
+2026-03-15 09:44:26.647 [info] > git rev-parse --show-toplevel [2ms]
+2026-03-15 09:44:26.647 [info] fatal: not a git repository (or any parent up to mount point /workspaces)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).
+2026-03-15 09:58:17.781 [info] > git rev-parse --show-toplevel [10471ms]
+2026-03-15 09:58:17.781 [info] fatal: not a git repository (or any parent up to mount point /workspaces)
+Stopping at filesystem boundary (GIT_DISCOVERY_ACROSS_FILESYSTEM not set).

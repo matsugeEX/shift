@@ -1,0 +1,19 @@
+2026-05-13 06:00:45.143 [info] Extension host with pid 354 started
+2026-05-13 06:00:45.202 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-05-13 06:00:45.288 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-05-13 06:00:45.404 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-05-13 06:00:45.404 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-05-13 06:00:45.591 [info] Eager extensions activated
+2026-05-13 06:00:45.591 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-05-13 06:00:45.591 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-05-13 06:01:37.961 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2026-05-13 06:05:13.708 [warning] [Decorations] CAPPING events from decorations provider vscode.git 2044
+2026-05-13 06:05:13.755 [warning] [Decorations] CAPPING events from decorations provider vscode.git 2044
+2026-05-13 06:05:14.958 [warning] [Decorations] CAPPING events from decorations provider vscode.git 2044
+2026-05-13 06:05:19.531 [warning] [Decorations] CAPPING events from decorations provider vscode.git 2044
+2026-05-13 06:08:02.123 [warning] [Decorations] CAPPING events from decorations provider vscode.git 2044
+2026-05-13 06:08:13.356 [warning] [Decorations] CAPPING events from decorations provider vscode.git 2044
+2026-05-13 06:08:11.708 [warning] [Decorations] CAPPING events from decorations provider vscode.git 2044
+2026-05-13 06:08:16.244 [warning] [Decorations] CAPPING events from decorations provider vscode.git 2044
+2026-05-13 06:08:20.450 [info] Extension host terminating: received terminate message from renderer
+2026-05-13 06:08:20.463 [info] Extension host with pid 354 exiting with code 0
