@@ -1,33 +1,39 @@
-npx create-next-app@latest --ts next-sample
-cd next-sample
-npm run start
-npm run dev
-npm run start
-npm run dev
-cd next-sample
-npm run start
-npm run dev
-npm run start
-npm run build
-npm run start
-npm run build
-npm run start
-cd next-sample
-npm run start
-npm run build
-npm run start
-npm run build
-npm run start
-npm run build
-npm run start
-cd next-sample
-git init
-git clone 
-git clone https://github.com/matsugeEX/AOJ.git
-git commit -m "good"
-git config --global user.name "matsugeEX"
-git config --global user.email "matsuge0727@icloud.com"
-git init
-git clone https://github.com/matsugeEX/myHP.git
 ls
+ls -s
+ls -l
 cd myHP
+git fetch
+git clone https://github.com/matsugeEX/myHP.git
+git add .
+git status
+git push -m "delete"
+git status
+git add .
+git status
+cd .
+cd ..
+git add .
+git status
+git push -m "delete"
+git status
+git commit -m "delete"
+git status
+git push orogin
+git push master
+git push main
+git push origin
+git branch
+git push --set-upstream origin master
+git remote -v
+git remote add origin https://github.com/matsugeEX/myHP.git
+git push --set-upstream origin master
+git status
+create-next-app shift_table
+npx create-next-app shift_table
+ls
+cd shift_table
+code .
+open 
+cd ..
+ls
+code.

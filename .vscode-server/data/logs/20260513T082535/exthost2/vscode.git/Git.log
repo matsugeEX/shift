@@ -1,0 +1,12 @@
+2026-05-13 08:28:57.951 [info] [main] ログ レベル: Info
+2026-05-13 08:28:57.951 [info] [main] Git の検証が検出されました: "git"
+2026-05-13 08:28:57.951 [info] [main] "git" から Git "2.39.5" を使用しています
+2026-05-13 08:28:57.951 [info] [Model][doInitialScan] Initial repository scan started
+2026-05-13 08:28:57.951 [info] > git rev-parse --show-toplevel [2ms]
+2026-05-13 08:28:57.956 [info] > git rev-parse --show-toplevel [3ms]
+2026-05-13 08:28:57.959 [info] > git rev-parse --show-toplevel [1ms]
+2026-05-13 08:28:57.962 [info] > git rev-parse --show-toplevel [1ms]
+2026-05-13 08:28:57.965 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (1), unsafe repositories (0)
+2026-05-13 08:30:09.932 [info] > git rev-parse --show-toplevel [2ms]
+2026-05-13 08:30:21.247 [info] > git rev-parse --show-toplevel [0ms]
+2026-05-13 08:30:21.565 [info] > git rev-parse --show-toplevel [1ms]
