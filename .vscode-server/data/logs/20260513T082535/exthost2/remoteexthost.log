@@ -14,3 +14,7 @@
 2026-05-13 08:30:09.925 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:typescriptreact'
 2026-05-13 08:30:21.396 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
 2026-05-13 08:30:30.136 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2026-05-13 08:49:45.420 [info] ExtensionService#_doActivateExtension vscode.css-language-features, startup: false, activationEvent: 'onLanguage:css'
+2026-05-13 08:53:40.007 [info] Extension host terminating: received terminate message from renderer
+2026-05-13 08:53:40.007 [info] Lock '/home/node/.vscode-server/data/User/workspaceStorage/d3b4db6085c460330c95ac0e1efe4a11/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2026-05-13 08:53:40.038 [info] Extension host with pid 2290 exiting with code 0

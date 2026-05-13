@@ -1,0 +1,7 @@
+2026-05-13 09:00:09.482 [info] [main] ログ レベル: Info
+2026-05-13 09:00:09.482 [info] [main] Git の検証が検出されました: "git"
+2026-05-13 09:00:09.482 [info] [main] "git" から Git "2.39.5" を使用しています
+2026-05-13 09:00:09.482 [info] [Model][doInitialScan] Initial repository scan started
+2026-05-13 09:00:09.482 [warning] [Model][traverseWorkspaceFolder] Unable to read workspace folder '/home/node/shift': Error: ENOENT: no such file or directory, scandir '/home/node/shift'
+2026-05-13 09:00:09.482 [warning] [Model][getRepositoryExact] Failed to get repository realpath for: "/home/node/shift". Error:Error: ENOENT: no such file or directory, realpath '/home/node/shift'
+2026-05-13 09:00:09.482 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (0), unsafe repositories (0)

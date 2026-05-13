@@ -1,0 +1,35 @@
+0 verbose cli /usr/local/bin/node /usr/local/bin/npm
+1 info using npm@10.9.4
+2 info using node@v22.22.1
+3 silly config load:file:/usr/local/lib/node_modules/npm/npmrc
+4 silly config load:file:/home/node/.npmrc
+5 silly config load:file:/usr/local/etc/npmrc
+6 verbose title npm run dev
+7 verbose argv "run" "dev"
+8 verbose logfile logs-max:10 dir:/home/node/.npm/_logs/2026-05-13T09_43_35_248Z-
+9 verbose logfile /home/node/.npm/_logs/2026-05-13T09_43_35_248Z-debug-0.log
+10 silly logfile start cleaning logs, removing 1 files
+11 verbose stack Error: Could not read package.json: Error: ENOENT: no such file or directory, open '/home/node/package.json'
+11 verbose stack     at async open (node:internal/fs/promises:636:25)
+11 verbose stack     at async readFile (node:internal/fs/promises:1235:14)
+11 verbose stack     at async read (/usr/local/lib/node_modules/npm/node_modules/@npmcli/package-json/lib/read-package.js:9:18)
+11 verbose stack     at async PackageJson.load (/usr/local/lib/node_modules/npm/node_modules/@npmcli/package-json/lib/index.js:132:31)
+11 verbose stack     at async PackageJson.normalize (/usr/local/lib/node_modules/npm/node_modules/@npmcli/package-json/lib/index.js:118:5)
+11 verbose stack     at async #run (/usr/local/lib/node_modules/npm/lib/commands/run-script.js:86:13)
+11 verbose stack     at async RunScript.exec (/usr/local/lib/node_modules/npm/lib/commands/run-script.js:40:7)
+11 verbose stack     at async Npm.exec (/usr/local/lib/node_modules/npm/lib/npm.js:207:9)
+11 verbose stack     at async module.exports (/usr/local/lib/node_modules/npm/lib/cli/entry.js:74:5)
+12 error code ENOENT
+13 error syscall open
+14 error path /home/node/package.json
+15 error errno -2
+16 error enoent Could not read package.json: Error: ENOENT: no such file or directory, open '/home/node/package.json'
+17 error enoent This is related to npm not being able to find a file.
+17 error enoent
+18 verbose cwd /home/node
+19 verbose os Linux 6.6.87.2-microsoft-standard-WSL2
+20 verbose node v22.22.1
+21 verbose npm  v10.9.4
+22 verbose exit -2
+23 verbose code -2
+24 error A complete log of this run can be found in: /home/node/.npm/_logs/2026-05-13T09_43_35_248Z-debug-0.log

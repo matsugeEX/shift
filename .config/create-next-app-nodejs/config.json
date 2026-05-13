@@ -1,11 +1,11 @@
 {
 	"preferences": {
 		"typescript": true,
-		"eslint": false,
+		"eslint": true,
 		"linter": "eslint",
 		"tailwind": true,
-		"app": true,
-		"srcDir": false,
+		"app": false,
+		"srcDir": true,
 		"importAlias": "@/*",
 		"customizeImportAlias": false,
 		"empty": false,

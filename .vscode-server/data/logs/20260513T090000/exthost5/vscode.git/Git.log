@@ -1,0 +1,15 @@
+2026-05-13 09:21:06.965 [info] [main] ログ レベル: Info
+2026-05-13 09:21:06.965 [info] [main] Git の検証が検出されました: "git"
+2026-05-13 09:21:06.965 [info] [main] "git" から Git "2.39.5" を使用しています
+2026-05-13 09:21:06.965 [info] [Model][doInitialScan] Initial repository scan started
+2026-05-13 09:21:06.965 [info] > git rev-parse --show-toplevel [1ms]
+2026-05-13 09:21:06.965 [info] > git rev-parse --show-toplevel [1ms]
+2026-05-13 09:21:06.967 [info] > git rev-parse --show-toplevel [0ms]
+2026-05-13 09:21:06.971 [info] > git rev-parse --show-toplevel [1ms]
+2026-05-13 09:21:06.973 [info] [Model][doInitialScan] Initial repository scan completed - repositories (0), closed repositories (0), parent repositories (1), unsafe repositories (0)
+2026-05-13 09:22:19.322 [info] > git rev-parse --show-toplevel [7ms]
+2026-05-13 09:22:45.020 [info] > git rev-parse --show-toplevel [2ms]
+2026-05-13 09:23:11.240 [info] > git rev-parse --show-toplevel [3ms]
+2026-05-13 09:23:32.489 [info] > git rev-parse --show-toplevel [1ms]
+2026-05-13 09:23:32.728 [info] > git rev-parse --show-toplevel [1ms]
+2026-05-13 09:23:42.963 [warning] [Model][getRepositoryExact] Failed to get repository realpath for: "/home/node/shift/". Error:Error: ENOENT: no such file or directory, realpath '/home/node/shift/'
