@@ -1,0 +1,15 @@
+2026-05-13 16:29:35.541 [info] Extension host with pid 2245 started
+2026-05-13 16:29:35.547 [info] Lock '/home/node/.vscode-server/data/User/workspaceStorage/5024bddc7ed4fa8b539158c2e51ab270/vscode.lock': Lock acquired.
+2026-05-13 16:29:35.574 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-05-13 16:29:42.765 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-05-13 16:29:42.883 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-05-13 16:29:42.883 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-05-13 16:29:42.933 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2026-05-13 16:29:35.980 [info] Eager extensions activated
+2026-05-13 16:29:35.981 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-05-13 16:29:35.981 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-05-13 16:29:36.123 [warning] [Decorations] CAPPING events from decorations provider vscode.git 2460
+2026-05-13 16:29:36.368 [warning] [Decorations] CAPPING events from decorations provider vscode.git 2460
+2026-05-13 16:29:53.702 [info] Extension host terminating: received terminate message from renderer
+2026-05-13 16:29:53.702 [info] Lock '/home/node/.vscode-server/data/User/workspaceStorage/5024bddc7ed4fa8b539158c2e51ab270/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2026-05-13 16:29:53.713 [info] Extension host with pid 2245 exiting with code 0

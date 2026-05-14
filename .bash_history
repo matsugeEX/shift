@@ -151,3 +151,81 @@ git remote -v
 git branch
 ls
 npx create-next-app@latest
+npm run dev
+ls
+cd ..
+ls
+npm run dev
+cd shift
+npm run dev
+cd ..
+git add .
+git status
+git commit -m "first commit"
+git push
+git remote -v
+git remote add shift https://github.com/matsugeEX/shift.git
+git remote -v
+git push
+git branch
+git fetch
+git remote
+git push shift main
+git remote -v
+git log 
+cd ..
+git clone https://github.com/matsugeEX/shift.git
+rm -r shift
+ls
+rm -r node_modules
+rm -r package-lock.json
+rm -r package.json
+ls
+git clone https://github.com/matsugeEX/shift.git
+code .
+ls
+cd shift
+npm run dev
+ls
+cd shift
+npm run dev
+cd ..
+npm install
+cd /home/node
+rm -rf shift
+ls
+npx create-next-app@latest --ts
+ls
+cd shift
+ls
+cd ..
+rm -r shift
+npx create-next-app@latest -ts
+cd shift
+ls
+cd -ts
+pwd
+rm -r -ts
+rm ./-ts
+rm -r -ts
+ls
+cd -ts
+cd "-ts"
+rm -rf -- -ts
+ls
+pwd
+npx create-next-app@latest --ts
+rm -r shift
+ls
+npx create-next-app --ts
+rm -r shift
+ls
+npx create-next-app@latest
+ls
+cd ahift
+cd shift
+npm run dev
+npm run dev
+npm run dev
+npm run dev
+git remote -v

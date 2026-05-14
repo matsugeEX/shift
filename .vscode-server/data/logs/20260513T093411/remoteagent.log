@@ -18,3 +18,5 @@
 2026-05-13 09:42:38.912 [info] [127.0.0.1][bd9e344b][ExtensionHostConnection] <3525> Launched Extension Host Process.
 2026-05-13 09:42:39.074 [info] [127.0.0.1][bd9e344b][ExtensionHostConnection] <3525> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
 
+2026-05-13 16:19:57.444 [warning] No ptyHost heartbeat after 6 seconds
+2026-05-13 16:20:56.175 [warning] No ptyHost heartbeat after 6 seconds

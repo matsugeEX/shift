@@ -1,0 +1,11 @@
+{
+    "code-runner.runInTerminal": true,
+    "explorer.confirmDelete": false,
+    "security.allowedUNCHosts": [
+        "wsl.localhost"
+    ],
+    "javascript.updateImportsOnFileMove.enabled": "never",
+    "terminal.integrated.enableMultiLinePasteWarning": "never",
+    "remote.autoForwardPortsSource": "hybrid",
+    "git.openRepositoryInParentFolders": "never"
+}
