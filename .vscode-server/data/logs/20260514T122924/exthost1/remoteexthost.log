@@ -1,0 +1,5 @@
+2026-05-14 12:29:26.150 [info] Extension host with pid 357 started
+2026-05-14 12:29:26.155 [info] Lock '/home/node/.vscode-server/data/User/workspaceStorage/711da0720457d74d19c18b7056ab53a4/vscode.lock': Lock acquired.
+2026-05-14 12:34:05.462 [info] Extension host terminating: renderer disconnected for too long (2)
+2026-05-14 12:34:05.463 [info] Lock '/home/node/.vscode-server/data/User/workspaceStorage/711da0720457d74d19c18b7056ab53a4/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2026-05-14 12:34:05.464 [info] Extension host with pid 357 exiting with code 0

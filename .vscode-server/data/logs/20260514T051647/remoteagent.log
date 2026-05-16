@@ -30,3 +30,5 @@
 2026-05-14 05:17:49.790 [info] [127.0.0.1][1dcdd224][ExtensionHostConnection] <1417> Launched Extension Host Process.
 2026-05-14 05:17:49.980 [info] [127.0.0.1][1dcdd224][ExtensionHostConnection] <1417> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
 
+2026-05-14 09:22:07.434 [info] [127.0.0.1][15087419][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2026-05-14 09:22:07.499 [info] [127.0.0.1][1dcdd224][ExtensionHostConnection] <1417> Extension Host Process exited with code: 0, signal: null.

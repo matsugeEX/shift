@@ -229,3 +229,29 @@ npm run dev
 npm run dev
 npm run dev
 git remote -v
+npm run dev
+cd ..
+git remote -v
+git branch -a
+git branch -b make_table
+git branch -a
+git checkout -b make_table
+git remote -v
+git branch -a
+git checkout master
+git branch -a
+git checkout make_table
+git branch -a
+git push -u shift make_table
+git branch -a
+git add .
+git status
+git commit -m "make shifttable simply"
+git status
+git push shift make_table
+node -v
+tailwindcss -v
+npm run dev
+npm run dev
+npm run dev
+npm run dev
