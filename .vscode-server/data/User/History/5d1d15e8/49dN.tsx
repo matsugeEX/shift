@@ -84,8 +84,8 @@ function table(){
   const day = () => {
     return(
       <div>
-        <input type="date" value = {date} onChange={(e) => setDate(e.target.value)} className="bg-white w-full text-black"></input>
-        <p className="bg-white w-full text-black">{getWeekDay(date)}曜日</p>
+        <input type="date" value = {date} onChange={(e) => setDate(e.target.value)} className="bg-white w-full text-red-400"></input>
+        <p className="bg-white w-full text-red-400">{getWeekDay(date)}曜日</p>
       </div>
     )
   }

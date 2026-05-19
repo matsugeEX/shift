@@ -263,3 +263,25 @@ git commit -m "add make cells and  color cells"
 git push 
 npm run dev
 npm run dev
+npm run dev
+git add .
+git status
+git commit -m "add multiplayer_table"
+git status
+cd ..
+git add .
+fit status
+git status
+git commit -m "add multiplayer_table"
+fit branch -a
+git branch -a
+git push
+cd shift
+npm run dev
+cd ..
+git add .
+git status
+git commit -m "add sequence_table"
+git push
+cd shift
+npm run dev

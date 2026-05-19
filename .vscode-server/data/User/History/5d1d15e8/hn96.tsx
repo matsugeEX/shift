@@ -69,27 +69,6 @@ function table(){
     }
   }
 
-  const [date,setDate] = useState("")
-
-  const getWeekDay = (dateString: string) => {
-    if (!dateString) return "";
-
-    const days = ["日", "月", "火", "水", "木", "金", "土"];
-
-    const date = new Date(dateString);
-
-    return days[date.getDay()];
-  };
-
-  const day = () => {
-    return(
-      <div>
-        <input type="date" value = {date} onChange={(e) => setDate(e.target.value)} className="bg-white w-full text-black"></input>
-        <p className="bg-white w-full text-black">{getWeekDay(date)}曜日</p>
-      </div>
-    )
-  }
-
 
 
 
@@ -98,9 +77,8 @@ function table(){
 
   return (
     <div tabIndex={0} onKeyDown={handleKeyDown}>
-      {day()}
       <table className="border-2 border-collapse table-fixed">
-        <caption className="bg-white w-full h-16 text-black text-left text-3xl">シフト表</caption>
+        <caption className="border bg-blue-400 text-red">勤務表</caption>
         <tbody>
           <tr>
             <td className = "border bg-gray-400 w-32 h-16">

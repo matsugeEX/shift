@@ -1,0 +1,17 @@
+2026-05-19 16:22:54.848 [info] 
+
+
+
+
+2026-05-19 16:22:54.868 [info] Extension host agent started.
+2026-05-19 16:22:54.985 [debug] ComputeTargetPlatform: linux-x64
+2026-05-19 16:22:54.993 [debug] No extensions are marked as removed.
+2026-05-19 16:22:55.052 [info] [127.0.0.1][5fb76e59][ManagementConnection] New connection established.
+2026-05-19 16:22:55.066 [info] [127.0.0.1][4c64a21b][ExtensionHostConnection] New connection established.
+2026-05-19 16:22:55.066 [debug] ServerLifetime: consumer 'ExtensionHost:4c64a21b' active (total: 1)
+2026-05-19 16:22:55.076 [info] Log level changed to info
+2026-05-19 16:22:55.090 [info] [127.0.0.1][4c64a21b][ExtensionHostConnection] <346> Launched Extension Host Process.
+2026-05-19 16:22:55.335 [info] [127.0.0.1][4c64a21b][ExtensionHostConnection] <346> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+
+2026-05-19 17:05:20.818 [error] Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
