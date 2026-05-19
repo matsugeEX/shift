@@ -255,3 +255,11 @@ npm run dev
 npm run dev
 npm run dev
 npm run dev
+npm run dev
+cd ..
+git branch -a
+git add .
+git commit -m "add make cells and  color cells"
+git push 
+npm run dev
+npm run dev

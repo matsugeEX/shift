@@ -29,3 +29,5 @@
 2026-05-16 07:02:52.151 [info] Extracted extension to file:///home/node/.vscode-server/extensions/github.copilot-chat-0.48.1: github.copilot-chat
 2026-05-16 07:02:52.163 [info] Renamed to /home/node/.vscode-server/extensions/github.copilot-chat-0.48.1
 2026-05-16 07:02:52.174 [info] Extension installed successfully: github.copilot-chat file:///home/node/.vscode-server/extensions/extensions.json
+2026-05-16 12:43:47.937 [info] [127.0.0.1][cff1e283][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2026-05-16 12:43:48.009 [info] [127.0.0.1][3095365a][ExtensionHostConnection] <366> Extension Host Process exited with code: 0, signal: null.

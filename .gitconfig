@@ -2,4 +2,4 @@
 	email = matsuge0727@icloud.com
 	name = matsugeEX
 [credential]
-	helper = "!f() { /home/node/.vscode-server/bin/0958016b2af9f09bb4257e0df4a95e2f90590f9f/node /tmp/vscode-remote-containers-0fd29780-4d6b-4c1b-a70b-1a84310468b5.js git-credential-helper $*; }; f"
+	helper = "!f() { /home/node/.vscode-server/bin/0958016b2af9f09bb4257e0df4a95e2f90590f9f/node /tmp/vscode-remote-containers-cebaaee3-2afe-4c06-8751-2f0df87ec71e.js git-credential-helper $*; }; f"
