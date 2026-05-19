@@ -1,72 +1,5 @@
 import ReactDOM from "react-dom";
-import { useState } from "react";
-
-function tailwind(){
-  return (
-    <div>
-      <div className="border border-red-300 rounded-2xl p-2 m-2 flex justify-around items-center">
-        <p className="m-0 text-white-400">Tailwindcss</p>
-        <button className="bg-blue-300 border-1 p-2 rounded-md hover:bg-red-400 hover:text-white">BUTTON</button>
-      </div>
-      <div className="border border-red-300 rounded-2xl p-2 m-2 flex justify-around items-center">
-        <p>dwd</p>
-      </div>
-    </div>
-  )
-}
-
-///export default tailwind;
-
-function ShiftTable(){
-
-  const tableclassname = "w-full table-fixed border-collapse border border-white-300 rounded-2xl p-2 m-2 justify-around"
-  const tablecell = "table-cell border px-4 py-2 text-black"
-
-  return (
-    <div>
-      <table className={tableclassname}>
-        <tbody>
-          <tr>
-            <th>項目1</th>
-            <th>項目2</th>
-            <th>項目3</th>
-            <th>項目4</th>
-          </tr>
-          <tr>
-            <td className="p-2 text-center">赤</td>
-            <td className="p-2 text-center">緑</td>
-            <td className="p-2 text-center">青</td>
-            <td className="p-2 text-center">クリスタル</td>
-          </tr>
-        </tbody>
-      </table>
-      <table className="w-full table-fixed border-collapse rounded-2xl p-2 m-2 justify-around">
-        <tbody>
-          <tr className="table-row bg-gray-100 font-bold">
-            <th className={tablecell}>商品名</th>
-            <th className={tablecell}>価格</th>
-            <th className={tablecell}>在庫状況</th>
-          </tr>
-        </tbody>
-      </table>
-      <table className="flex-wrap h-64">
-        <tbody>
-          <tr>
-            <th className="border bg-blue-200 text-black w-128 h-64">dwa</th>
-            <th className="border bg-blue-200 text-black w-128">dwa</th>
-            <th className="border bg-blue-200 text-black w-128">dwa</th>
-            <th className="border bg-blue-200 text-black w-128">dwa</th>
-            <th className="border bg-blue-200 text-black w-128">dwa</th>
-            <th className="border bg-blue-200 text-black w-128">dwa</th>
-            <th className="border bg-blue-200 text-black w-128">dwa</th>
-          </tr>
-        </tbody>
-      </table>
-    </div>
-  )
-}
-
-///export default ShiftTable;
+import React,{ useState,useEffect } from "react";
 
 function table(){
 
@@ -75,7 +8,7 @@ function table(){
     Array(140).fill(false)
   )
 
-  const toggleCell = (index) => {
+  const toggleCell = (index:number) => {
   const newState = [...cellsState];
   newState[index] = !newState[index];
   setCellsState(newState);
@@ -91,10 +24,25 @@ function table(){
     );
   }
 
+    const cells2 = [];
+
+  for (let i = 140; i < 280; i++) {
+    cells2.push(
+      <td key={i}
+          onClick={() => toggleCell(i)} 
+          className={`border w-4 h-16 ${cellsState[i] ? "bg-red-400" : "bg-blue-400"}`}></td>
+    );
+  }
+
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === "Enter"){
+      console.log("Enterが押されました")
+    }
+  };
 
   return (
-    <div>
-      <table className="border-2 ">
+    <div tabIndex={0} onKeyDown={handleKeyDown}>
+      <table className="border-2">
         <tbody className="">
           <tr>
             <th className="border-s-2 border-red-400 bg-blue-200 text-black hover:bg-red-700 w-16 h-16">dwa</th>
@@ -109,11 +57,19 @@ function table(){
           </tr>
         </tbody>
       </table>
-      <table className="border-2">
+      <table className="border-2 border-collapse table-fixed">
         <tbody>
-          
           <tr>
+            <td className = "border bg-gray-400 w-32 h-16">
+              <input type ="text" placeholder="名前を入力" className="bg-white text-black focus:outline-none placeholder:text-black-800"></input>
+            </td>
             {cells}
+          </tr>
+                    <tr>
+            <td className = "border bg-gray-400 w-32 h-16">
+              <input type ="text" placeholder="名前を入力" className="bg-white text-black focus:outline-none placeholder:text-black-800"></input>
+            </td>
+            {cells2}
           </tr>
         </tbody>
       </table>
