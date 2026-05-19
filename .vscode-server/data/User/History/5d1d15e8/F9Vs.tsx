@@ -1,5 +1,6 @@
 import ReactDOM from "react-dom";
-import React,{ useState,useEffect } from "react";
+import { useState,useEffect } from "react";
+import React from "react";
 
 function table(){
 
@@ -56,7 +57,7 @@ function table(){
   setTimeState(newState);
   };
 
-  const arrays:JSX.Element[]= []
+  const arrays: React.ReactNode[]= []
   for(let i = 0; i < 8; i++){
     arrays[i] = [];
     for(let j = 0; j < 140;j++){

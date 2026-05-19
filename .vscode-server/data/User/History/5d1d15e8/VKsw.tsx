@@ -56,7 +56,7 @@ function table(){
   setTimeState(newState);
   };
 
-  const arrays:JSX.Element[]= []
+  const arrays: React.ReactNode[]= []
   for(let i = 0; i < 8; i++){
     arrays[i] = [];
     for(let j = 0; j < 140;j++){

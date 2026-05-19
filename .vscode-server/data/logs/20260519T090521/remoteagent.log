@@ -10,3 +10,5 @@
 2026-05-19 09:05:21.552 [info] [127.0.0.1][dd3a9f49][ExtensionHostConnection] <370> Launched Extension Host Process.
 2026-05-19 09:05:21.771 [info] [127.0.0.1][dd3a9f49][ExtensionHostConnection] <370> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
 
+2026-05-19 11:25:20.358 [error] Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)

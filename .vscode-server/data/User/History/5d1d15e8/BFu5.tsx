@@ -56,18 +56,27 @@ function table(){
   setTimeState(newState);
   };
 
-  const arrays:JSX.Element[]= []
+  const arrays = []
   for(let i = 0; i < 8; i++){
     arrays[i] = [];
-    for(let j = 0; j < 140;j++){
-      arrays[i].push(
-        <td key = {i+j*140}
-            onClick={() => ChangeCells(i+j*140)}
-            className={`border w-4 h-16 ${TimeState[i+j*140] ? "bg-red-400" : "bg-blue-400"}`}>
-        </td>
-      )
-    }
+    arrays.push(
+      <td key = {i}
+          onClick={() => ChangeCells(i)}
+          className={`border w-4 h-16 ${TimeState[i][i] ? "bg-red-400" : "bg-blue-400"}`}>
+      </td>
+    )
   }
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -77,6 +86,21 @@ function table(){
 
   return (
     <div tabIndex={0} onKeyDown={handleKeyDown}>
+      <table className="border-2">
+        <tbody className="">
+          <tr>
+            <th className="border-s-2 border-red-400 bg-blue-200 text-black hover:bg-red-700 w-16 h-16">dwa</th>
+            <th tabIndex={0} className="border-s-2 border-red-400 bg-blue-200 text-black w-1 h-16 focus:bg-red-400">ddwadwd</th>
+            <th className="border-s-2 border-red-400 bg-blue-200 text-black w-1 h-16 active:bg-red-400">dwa</th>
+            <th onClick={() => setboolen(!isFlase)} 
+                className={`border border-red-400 text-black bg-blue-200 ${isFlase ? "bg-red-400" : "bg-blue-400"}`}>htjrt</th>
+          </tr>
+          <tr>
+            <th className="border-s-2 border-red-400 bg-blue-200 text-black h-16">fewf</th>
+            <th className="border-2 border-red-400 bg-blue-200 text-black h-16">fewf</th>
+          </tr>
+        </tbody>
+      </table>
       <table className="border-2 border-collapse table-fixed">
         <tbody>
           <tr>
@@ -95,25 +119,7 @@ function table(){
             <td className = "border bg-gray-400 w-32 h-16">
               <input type ="text" placeholder="名前を入力" className="bg-white text-black focus:outline-none placeholder:text-black-800"></input>
             </td>
-            {arrays[0]}
-          </tr>
-          <tr>
-            <td className = "border bg-gray-400 w-32 h-16">
-              <input type ="text" placeholder="名前を入力" className="bg-white text-black focus:outline-none placeholder:text-black-800"></input>
-            </td>
-            {arrays[1]}
-          </tr>
-          <tr>
-            <td className = "border bg-gray-400 w-32 h-16">
-              <input type ="text" placeholder="名前を入力" className="bg-white text-black focus:outline-none placeholder:text-black-800"></input>
-            </td>
-            {arrays[2]}
-          </tr>
-          <tr>
-            <td className = "border bg-gray-400 w-32 h-16">
-              <input type ="text" placeholder="名前を入力" className="bg-white text-black focus:outline-none placeholder:text-black-800"></input>
-            </td>
-            {arrays[3]}
+            {arrays}
           </tr>
         </tbody>
       </table>

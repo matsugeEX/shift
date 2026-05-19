@@ -56,7 +56,7 @@ function table(){
   setTimeState(newState);
   };
 
-  const arrays:JSX.Element[]= []
+  const arrays = []
   for(let i = 0; i < 8; i++){
     arrays[i] = [];
     for(let j = 0; j < 140;j++){
@@ -77,6 +77,21 @@ function table(){
 
   return (
     <div tabIndex={0} onKeyDown={handleKeyDown}>
+      <table className="border-2">
+        <tbody className="">
+          <tr>
+            <th className="border-s-2 border-red-400 bg-blue-200 text-black hover:bg-red-700 w-16 h-16">dwa</th>
+            <th tabIndex={0} className="border-s-2 border-red-400 bg-blue-200 text-black w-1 h-16 focus:bg-red-400">ddwadwd</th>
+            <th className="border-s-2 border-red-400 bg-blue-200 text-black w-1 h-16 active:bg-red-400">dwa</th>
+            <th onClick={() => setboolen(!isFlase)} 
+                className={`border border-red-400 text-black bg-blue-200 ${isFlase ? "bg-red-400" : "bg-blue-400"}`}>htjrt</th>
+          </tr>
+          <tr>
+            <th className="border-s-2 border-red-400 bg-blue-200 text-black h-16">fewf</th>
+            <th className="border-2 border-red-400 bg-blue-200 text-black h-16">fewf</th>
+          </tr>
+        </tbody>
+      </table>
       <table className="border-2 border-collapse table-fixed">
         <tbody>
           <tr>
