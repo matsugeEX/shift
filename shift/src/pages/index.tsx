@@ -41,11 +41,6 @@ function table(){
   };
 
 
-
-
-
-
-
   const [TimeState,setTimeState] = useState(
     Array(140).fill(false)
   )
@@ -57,7 +52,7 @@ function table(){
   };
 
   const arrays:JSX.Element[]= []
-  for(let i = 0; i < 8; i++){
+  for(let i = 0; i < 10; i++){
     arrays[i] = [];
     for(let j = 0; j < 140;j++){
       arrays[i].push(
@@ -67,6 +62,21 @@ function table(){
         </td>
       )
     }
+  }
+
+  const rowShiftTable = (Table) => {
+    const rows = []
+    for(let i = 0; i < 10;i++){
+      rows.push(
+        <tr key = {i}>
+          <td className = "border bg-gray-400 w-32 h-16">
+            <input type ="text" placeholder="名前を入力" className="bg-white text-black focus:outline-none placeholder:text-black-800"></input>
+          </td>
+          {Table[i]}
+        </tr>        
+      )
+    }
+    return rows
   }
 
   const [date,setDate] = useState("")
@@ -92,52 +102,13 @@ function table(){
 
 
 
-
-
-
-
   return (
     <div tabIndex={0} onKeyDown={handleKeyDown}>
       {day()}
       <table className="border-2 border-collapse table-fixed">
         <caption className="bg-white w-full h-16 text-black text-left text-3xl">シフト表</caption>
         <tbody>
-          <tr>
-            <td className = "border bg-gray-400 w-32 h-16">
-              <input type ="text" placeholder="名前を入力" className="bg-white text-black focus:outline-none placeholder:text-black-800"></input>
-            </td>
-            {cells}
-          </tr>
-          <tr>
-            <td className = "border bg-gray-400 w-32 h-16">
-              <input type ="text" placeholder="名前を入力" className="bg-white text-black focus:outline-none placeholder:text-black-800"></input>
-            </td>
-            {cells2}
-          </tr>
-          <tr>
-            <td className = "border bg-gray-400 w-32 h-16">
-              <input type ="text" placeholder="名前を入力" className="bg-white text-black focus:outline-none placeholder:text-black-800"></input>
-            </td>
-            {arrays[0]}
-          </tr>
-          <tr>
-            <td className = "border bg-gray-400 w-32 h-16">
-              <input type ="text" placeholder="名前を入力" className="bg-white text-black focus:outline-none placeholder:text-black-800"></input>
-            </td>
-            {arrays[1]}
-          </tr>
-          <tr>
-            <td className = "border bg-gray-400 w-32 h-16">
-              <input type ="text" placeholder="名前を入力" className="bg-white text-black focus:outline-none placeholder:text-black-800"></input>
-            </td>
-            {arrays[2]}
-          </tr>
-          <tr>
-            <td className = "border bg-gray-400 w-32 h-16">
-              <input type ="text" placeholder="名前を入力" className="bg-white text-black focus:outline-none placeholder:text-black-800"></input>
-            </td>
-            {arrays[3]}
-          </tr>
+          {rowShiftTable(arrays)}
         </tbody>
       </table>
     </div>
