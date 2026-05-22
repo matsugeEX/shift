@@ -285,3 +285,23 @@ git commit -m "add sequence_table"
 git push
 cd shift
 npm run dev
+npm run dev
+cd ..
+git add .
+git status
+git commit -m "add show_date_and_day "
+git push
+cd shift
+npm run dev
+npnm run dev
+npm run dev
+npm run dev
+npm run dev
+npm run dev
+cd ..
+git add index.tsx
+git add shift/src/pages/index.tsx
+git status
+fit commit -m "add function make_rowshifttabl_for_rendering"
+git commit -m "add function make_rowshifttabl_for_rendering"
+git push

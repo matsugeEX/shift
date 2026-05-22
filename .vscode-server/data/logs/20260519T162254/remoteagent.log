@@ -15,3 +15,22 @@
 
 2026-05-19 17:05:20.818 [error] Error: connect ECONNREFUSED 127.0.0.1:3000
     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+2026-05-19 17:09:16.157 [info] [127.0.0.1][5fb76e59][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2026-05-19 17:09:16.197 [info] [127.0.0.1][4c64a21b][ExtensionHostConnection] <346> Extension Host Process exited with code: 0, signal: null.
+2026-05-19 17:09:22.582 [info] [127.0.0.1][44692a1a][ManagementConnection] New connection established.
+2026-05-19 17:09:22.587 [info] [127.0.0.1][abadf1c0][ExtensionHostConnection] New connection established.
+2026-05-19 17:09:22.589 [info] [127.0.0.1][abadf1c0][ExtensionHostConnection] <15885> Launched Extension Host Process.
+2026-05-19 17:09:22.794 [info] [127.0.0.1][abadf1c0][ExtensionHostConnection] <15885> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+
+2026-05-19 17:09:26.064 [error] Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+2026-05-19 17:09:32.922 [error] Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+2026-05-19 17:09:32.923 [error] Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+2026-05-19 17:09:33.129 [error] Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+2026-05-19 17:10:50.902 [error] Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+2026-05-19 17:15:08.152 [info] [127.0.0.1][44692a1a][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2026-05-19 17:15:08.189 [info] [127.0.0.1][abadf1c0][ExtensionHostConnection] <15885> Extension Host Process exited with code: 0, signal: null.
