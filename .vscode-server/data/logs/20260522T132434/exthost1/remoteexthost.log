@@ -1,0 +1,51 @@
+2026-05-22 13:24:35.772 [info] Extension host with pid 377 started
+2026-05-22 13:24:35.776 [info] Lock '/home/node/.vscode-server/data/User/workspaceStorage/711da0720457d74d19c18b7056ab53a4/vscode.lock': Lock acquired.
+2026-05-22 13:24:35.859 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-05-22 13:24:35.860 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:typescriptreact'
+2026-05-22 13:24:36.044 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-05-22 13:24:36.046 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2026-05-22 13:24:36.046 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2026-05-22 13:24:36.227 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-05-22 13:24:36.227 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-05-22 13:24:36.428 [info] Eager extensions activated
+2026-05-22 13:24:36.428 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-05-22 13:24:36.428 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-05-22 13:24:39.103 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2026-05-22 13:24:39.103 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2026-05-22 13:24:39.103 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'
+2026-05-22 13:35:35.949 [info] ExtensionService#_doActivateExtension vscode.tunnel-forwarding, startup: false, activationEvent: 'onTunnel'
+2026-05-22 14:14:01.229 [error] [vscode.typescript-language-features] provider FAILED
+2026-05-22 14:14:01.229 [error] Error: <semantic> TypeScript Server Error (6.0.3)
+Debug Failure. False expression: Expected symbol to be a module
+Error: Debug Failure. False expression: Expected symbol to be a module
+    at Object.addImportForModuleSymbol (/vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/node_modules/typescript/lib/typescript.js:159050:11)
+    at /vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/node_modules/typescript/lib/typescript.js:148758:19
+    at Map.forEach (<anonymous>)
+    at addTargetFileImports (/vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/node_modules/typescript/lib/typescript.js:148751:17)
+    at /vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/node_modules/typescript/lib/typescript.js:183921:7
+    at ConfiguredProject2.runWithTemporaryFileUpdate (/vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/node_modules/typescript/lib/typescript.js:189480:7)
+    at pasteEdits (/vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/node_modules/typescript/lib/typescript.js:183901:55)
+    at /vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/node_modules/typescript/lib/typescript.js:183886:118
+    at _ChangeTracker.with (/vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/node_modules/typescript/lib/typescript.js:179935:5)
+    at Object.pasteEditsProvider (/vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/node_modules/typescript/lib/typescript.js:183886:60)
+    at Object.getPasteEdits (/vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/node_modules/typescript/lib/typescript.js:153906:34)
+    at IpcIOSession.getPasteEdits (/vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/node_modules/typescript/lib/typescript.js:197213:49)
+    at getPasteEdits (/vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/node_modules/typescript/lib/typescript.js:195327:43)
+    at /vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/node_modules/typescript/lib/typescript.js:197591:15
+    at IpcIOSession.executeWithRequestId (/vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/node_modules/typescript/lib/typescript.js:197580:14)
+    at IpcIOSession.executeCommand (/vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/node_modules/typescript/lib/typescript.js:197589:29)
+    at IpcIOSession.onMessage (/vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/node_modules/typescript/lib/typescript.js:197637:68)
+    at process.<anonymous> (/vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/node_modules/typescript/lib/_tsserver.js:519:14)
+    at process.emit (node:events:519:28)
+    at emit (node:internal/child_process:949:14)
+    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+	at r.create (/vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/typescript-language-features/dist/extension.js:24:168)
+	at r.dispatchResponse (/vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/typescript-language-features/dist/extension.js:26:2654)
+	at r.dispatchMessage (/vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/typescript-language-features/dist/extension.js:26:1162)
+	at ChildProcess.<anonymous> (/vscode/vscode-server/bin/linux-x64/f6cfa2ea2403534de03f069bdf160d06451ed282/extensions/typescript-language-features/dist/extension.js:26:379)
+	at ChildProcess.emit (node:events:519:28)
+	at emit (node:internal/child_process:949:14)
+	at process.processTicksAndRejections (node:internal/process/task_queues:90:21)
+2026-05-22 14:35:44.654 [info] Extension host terminating: received terminate message from renderer
+2026-05-22 14:35:44.654 [info] Lock '/home/node/.vscode-server/data/User/workspaceStorage/711da0720457d74d19c18b7056ab53a4/vscode.lock': Marking the lockfile as scheduled to be released in 6000 ms.
+2026-05-22 14:35:44.687 [info] Extension host with pid 377 exiting with code 0

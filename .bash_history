@@ -305,3 +305,14 @@ git status
 fit commit -m "add function make_rowshifttabl_for_rendering"
 git commit -m "add function make_rowshifttabl_for_rendering"
 git push
+npm run dev
+npm run dev
+npm run dev
+npm run dev
+npm run dev
+cd ..
+git add .
+git status
+git commit -m "add ComponentsFolder and divide into ComponentsFile"
+git push
+npm run dev

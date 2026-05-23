@@ -33,3 +33,5 @@
     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
 2026-05-22 10:46:33.020 [error] Error: connect ECONNREFUSED 127.0.0.1:3000
     at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+2026-05-22 10:49:28.383 [info] [127.0.0.1][9fe97816][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2026-05-22 10:49:28.425 [info] [127.0.0.1][8b8ba139][ExtensionHostConnection] <396> Extension Host Process exited with code: 0, signal: null.

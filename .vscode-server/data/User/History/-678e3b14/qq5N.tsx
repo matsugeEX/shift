@@ -1,0 +1,45 @@
+import { useState} from "react";
+import ShiftRows from "./ShiftRows";
+
+type ButtonUI = {
+    className:string
+    count:number
+}
+
+export const AddMember = ({className,count}:ButtonUI) => {
+
+    const [Person,setCount] = useState(count)
+
+    const onclick = () => {
+        setCount((Person) => Person + 1)
+        console.log(Person)
+    }
+
+    return (
+        <div>
+            <button className = {className} onClick={onclick}>
+                人数を追加する
+            </button>
+            <ShiftRows count = {Person}/>
+        </div>
+    )
+}
+
+export const DeleteMember = ({className,count}:ButtonUI) => {
+
+    const [Person,setCount] = useState(count)
+
+    const onclick = () => {
+        setCount((Person) => Person - 1)
+        console.log(Person)
+    }
+
+    return (
+        <div>
+            <button className = {className} onClick={onclick}>
+                人数を追加する
+            </button>
+            <ShiftRows count = {Person}/>
+        </div>
+    )
+}
