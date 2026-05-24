@@ -1,0 +1,26 @@
+2026-05-24 07:27:17.727 [info] Extension host with pid 378 started
+2026-05-24 07:27:17.727 [error] Error: EEXIST: file already exists, open '/home/node/.vscode-server/data/User/workspaceStorage/711da0720457d74d19c18b7056ab53a4/vscode.lock'
+2026-05-24 07:27:17.728 [info] Lock '/home/node/.vscode-server/data/User/workspaceStorage/711da0720457d74d19c18b7056ab53a4/vscode.lock': Could not acquire lock, checking if the file is stale.
+2026-05-24 07:27:17.728 [info] Lock '/home/node/.vscode-server/data/User/workspaceStorage/711da0720457d74d19c18b7056ab53a4/vscode.lock': The lock does not look stale, elapsed: 423204 ms, giving up.
+2026-05-24 07:27:17.728 [error] Error: EEXIST: file already exists, open '/home/node/.vscode-server/data/User/workspaceStorage/711da0720457d74d19c18b7056ab53a4-1/vscode.lock'
+2026-05-24 07:27:17.735 [info] Lock '/home/node/.vscode-server/data/User/workspaceStorage/711da0720457d74d19c18b7056ab53a4-1/vscode.lock': Could not acquire lock, checking if the file is stale.
+2026-05-24 07:27:17.737 [info] Lock '/home/node/.vscode-server/data/User/workspaceStorage/711da0720457d74d19c18b7056ab53a4-1/vscode.lock': The lock does not look stale, elapsed: 582303 ms, giving up.
+2026-05-24 07:27:17.738 [error] Error: EEXIST: file already exists, open '/home/node/.vscode-server/data/User/workspaceStorage/711da0720457d74d19c18b7056ab53a4-2/vscode.lock'
+2026-05-24 07:27:17.739 [info] Lock '/home/node/.vscode-server/data/User/workspaceStorage/711da0720457d74d19c18b7056ab53a4-2/vscode.lock': Could not acquire lock, checking if the file is stale.
+2026-05-24 07:27:17.740 [info] Lock '/home/node/.vscode-server/data/User/workspaceStorage/711da0720457d74d19c18b7056ab53a4-2/vscode.lock': The lock looks stale, waiting for 2s.
+2026-05-24 07:27:17.808 [info] ExtensionService#_doActivateExtension vscode.emmet, startup: false, activationEvent: 'onLanguage'
+2026-05-24 07:27:17.809 [info] ExtensionService#_doActivateExtension vscode.typescript-language-features, startup: false, activationEvent: 'onLanguage:typescriptreact'
+2026-05-24 07:27:18.098 [info] ExtensionService#_doActivateExtension vscode.terminal-suggest, startup: false, activationEvent: 'onTerminalShellIntegration:*'
+2026-05-24 07:27:18.809 [info] ExtensionService#_doActivateExtension vscode.git-base, startup: true, activationEvent: '*', root cause: vscode.git
+2026-05-24 07:27:18.810 [info] ExtensionService#_doActivateExtension vscode.npm, startup: true, activationEvent: 'workspaceContains:package.json'
+2026-05-24 07:27:19.741 [info] Lock '/home/node/.vscode-server/data/User/workspaceStorage/711da0720457d74d19c18b7056ab53a4-2/vscode.lock': The lock looks stale even after waiting for 2s.
+2026-05-24 07:27:19.741 [info] Lock '/home/node/.vscode-server/data/User/workspaceStorage/711da0720457d74d19c18b7056ab53a4-2/vscode.lock': Deleting a stale lock.
+2026-05-24 07:27:19.744 [info] Lock '/home/node/.vscode-server/data/User/workspaceStorage/711da0720457d74d19c18b7056ab53a4-2/vscode.lock': Lock acquired.
+2026-05-24 07:27:19.823 [info] ExtensionService#_doActivateExtension vscode.git, startup: true, activationEvent: '*'
+2026-05-24 07:27:19.823 [info] ExtensionService#_doActivateExtension vscode.github, startup: true, activationEvent: '*'
+2026-05-24 07:27:20.243 [info] Eager extensions activated
+2026-05-24 07:27:20.243 [info] ExtensionService#_doActivateExtension vscode.debug-auto-launch, startup: false, activationEvent: 'onStartupFinished'
+2026-05-24 07:27:20.243 [info] ExtensionService#_doActivateExtension vscode.merge-conflict, startup: false, activationEvent: 'onStartupFinished'
+2026-05-24 07:27:24.939 [info] ExtensionService#_doActivateExtension vscode.configuration-editing, startup: false, activationEvent: 'onLanguage:json'
+2026-05-24 07:27:24.939 [info] ExtensionService#_doActivateExtension vscode.extension-editing, startup: false, activationEvent: 'onLanguage:json'
+2026-05-24 07:27:24.939 [info] ExtensionService#_doActivateExtension vscode.json-language-features, startup: false, activationEvent: 'onLanguage:json'

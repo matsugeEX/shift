@@ -1,0 +1,2 @@
+2026-05-24 11:06:57.233 [info] Expanding terminal instance, old id 711da0720457d74d19c18b7056ab53a4-2 -> new id undefined
+2026-05-24 11:06:57.233 [warning] Couldn't get layout info, a terminal was probably disconnected Could not find pty 2 on pty host

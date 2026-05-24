@@ -1,0 +1,15 @@
+2026-05-24 07:27:23.175 [info] 
+
+
+
+
+2026-05-24 07:27:23.182 [info] [AgentHostChannel] Not registering: no --agent-host-bridge-port / --agent-host-bridge-path set.
+2026-05-24 07:27:23.185 [info] Extension host agent started.
+2026-05-24 07:27:23.287 [debug] ComputeTargetPlatform: linux-x64
+2026-05-24 07:27:23.289 [debug] No extensions are marked as removed.
+2026-05-24 07:27:23.299 [info] [127.0.0.1][9d265560][ManagementConnection] New connection established.
+2026-05-24 07:27:23.308 [info] Log level changed to info
+2026-05-24 07:27:16.917 [info] [127.0.0.1][ebf9e150][ExtensionHostConnection] New connection established.
+2026-05-24 07:27:16.925 [info] [127.0.0.1][ebf9e150][ExtensionHostConnection] <378> Launched Extension Host Process.
+2026-05-24 07:27:17.136 [info] [127.0.0.1][ebf9e150][ExtensionHostConnection] <378> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+

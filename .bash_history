@@ -316,3 +316,18 @@ git status
 git commit -m "add ComponentsFolder and divide into ComponentsFile"
 git push
 npm run dev
+npm run dev
+npm run dev
+npm run dev
+cd ..
+git add .
+git status
+git commit -m "add click_to_add_or_delete_row"
+git push
+cd shift
+npm run dev
+npm run dev
+npm run dev
+pwd
+cd shift
+npm run dev

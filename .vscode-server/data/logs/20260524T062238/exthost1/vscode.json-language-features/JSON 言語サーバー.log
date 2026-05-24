@@ -1,0 +1,8 @@
+2026-05-24 06:22:45.612 [info] l10n: Problems loading vscode-local:/c%3A/Users/matsu/.vscode/extensions/ms-ceintl.vscode-language-pack-ja-1.121.2026052214/translations/extensions/vscode.json-language-features.i18n.json : Error: Unsupported protocol
+2026-05-24 06:23:28.478 [info] read schema from vscode: vscode://schemas/vscode-extensions
+2026-05-24 06:23:28.583 [info] read schema from vscode: vscode://schemas/settings/configurationDefaults
+2026-05-24 06:23:28.584 [info] read schema from vscode: vscode://schemas/toolsParameters
+2026-05-24 06:23:28.712 [info] read schema from vscode: vscode://schemas/settings/resourceLanguage
+2026-05-24 06:23:28.720 [info] read schema from vscode: vscode://schemas/token-styling
+2026-05-24 06:23:28.723 [info] read schema from vscode: vscode://schemas/textmate-colors
+2026-05-24 06:23:28.723 [info] read schema from vscode: vscode://schemas/workbench-colors

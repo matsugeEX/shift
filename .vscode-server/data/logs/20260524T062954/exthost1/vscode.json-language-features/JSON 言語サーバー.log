@@ -1,0 +1,18 @@
+2026-05-24 06:29:56.038 [info] l10n: Problems loading vscode-local:/c%3A/Users/matsu/.vscode/extensions/ms-ceintl.vscode-language-pack-ja-1.121.2026052214/translations/extensions/vscode.json-language-features.i18n.json : Error: Unsupported protocol
+2026-05-24 06:29:56.083 [info] read schema from vscode: vscode://schemas/vscode-extensions
+2026-05-24 06:29:56.186 [info] read schema from vscode: vscode://schemas/settings/configurationDefaults
+2026-05-24 06:29:56.187 [info] read schema from vscode: vscode://schemas/toolsParameters
+2026-05-24 06:29:56.355 [info] read schema from vscode: vscode://schemas/settings/resourceLanguage
+2026-05-24 06:29:56.360 [info] read schema from vscode: vscode://schemas/token-styling
+2026-05-24 06:29:56.360 [info] read schema from vscode: vscode://schemas/textmate-colors
+2026-05-24 06:29:56.360 [info] read schema from vscode: vscode://schemas/workbench-colors
+2026-05-24 06:29:56.850 [info] schema change detected vscode://schemas/settings/resourceLanguage
+2026-05-24 06:29:56.856 [info] read schema from vscode: vscode://schemas/vscode-extensions
+2026-05-24 06:29:56.877 [info] read schema from vscode: vscode://schemas/settings/configurationDefaults
+2026-05-24 06:29:56.935 [info] schema change detected vscode://schemas/settings/configurationDefaults
+2026-05-24 06:29:56.958 [info] read schema from vscode: vscode://schemas/settings/resourceLanguage
+2026-05-24 06:29:57.045 [info] read schema from vscode: vscode://schemas/vscode-extensions
+2026-05-24 06:29:57.106 [info] read schema from vscode: vscode://schemas/settings/configurationDefaults
+2026-05-24 06:29:57.412 [info] schema change detected vscode://schemas/settings/configurationDefaults
+2026-05-24 06:29:57.413 [info] read schema from vscode: vscode://schemas/vscode-extensions
+2026-05-24 06:29:57.431 [info] read schema from vscode: vscode://schemas/settings/configurationDefaults

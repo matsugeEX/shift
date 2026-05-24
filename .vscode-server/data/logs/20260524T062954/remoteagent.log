@@ -1,0 +1,20 @@
+2026-05-24 06:29:54.701 [info] 
+
+
+
+
+2026-05-24 06:29:54.707 [info] [AgentHostChannel] Not registering: no --agent-host-bridge-port / --agent-host-bridge-path set.
+2026-05-24 06:29:54.710 [info] Extension host agent started.
+2026-05-24 06:29:54.784 [info] [127.0.0.1][3c0daae8][ManagementConnection] New connection established.
+2026-05-24 06:29:54.806 [info] Log level changed to info
+2026-05-24 06:29:54.969 [info] [127.0.0.1][7f4354d5][ExtensionHostConnection] New connection established.
+2026-05-24 06:29:54.973 [info] [127.0.0.1][7f4354d5][ExtensionHostConnection] <374> Launched Extension Host Process.
+2026-05-24 06:29:55.181 [info] [127.0.0.1][7f4354d5][ExtensionHostConnection] <374> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
+
+2026-05-24 06:35:20.405 [warning] No ptyHost heartbeat after 6 seconds
+2026-05-24 06:35:21.485 [info] [127.0.0.1][7f4354d5][ExtensionHostConnection] The client has reconnected.
+2026-05-24 06:36:41.196 [warning] No ptyHost heartbeat after 6 seconds
+2026-05-24 06:37:22.994 [warning] No ptyHost heartbeat after 6 seconds
+2026-05-24 06:37:54.999 [warning] No ptyHost heartbeat after 6 seconds
+2026-05-24 06:38:16.575 [warning] No ptyHost heartbeat after 6 seconds
+2026-05-24 06:38:37.767 [warning] No ptyHost heartbeat after 6 seconds
