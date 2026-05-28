@@ -11,3 +11,10 @@
 2026-05-24 12:17:00.835 [info] [127.0.0.1][e803e277][ExtensionHostConnection] <383> Launched Extension Host Process.
 2026-05-24 12:17:01.065 [info] [127.0.0.1][e803e277][ExtensionHostConnection] <383> [reconnection-grace-time] Extension host: read VSCODE_RECONNECTION_GRACE_TIME=10800000ms (10800s)
 
+2026-05-24 14:56:39.856 [error] Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+2026-05-24 17:16:42.011 [warning] [File Watcher (node.js)] Watcher shutdown because watched path got deleted
+2026-05-24 17:16:54.780 [error] Error: connect ECONNREFUSED 127.0.0.1:3000
+    at TCPConnectWrap.afterConnect [as oncomplete] (node:net:1637:16)
+2026-05-24 17:43:52.275 [info] [127.0.0.1][7f899f3c][ManagementConnection] The client has disconnected gracefully, so the connection will be disposed.
+2026-05-24 17:43:52.351 [info] [127.0.0.1][e803e277][ExtensionHostConnection] <383> Extension Host Process exited with code: 0, signal: null.

@@ -331,3 +331,25 @@ npm run dev
 pwd
 cd shift
 npm run dev
+npm run dev
+npm run dev
+cd ..
+git add .
+git status
+git commit -m "first_connect shift_backend"
+git branch -a
+git push
+cd shift
+npm run dev
+npm run dev
+npm run dev
+npm run dev
+npm run dev
+npm run dev
+npm run dev
+npm install react-hook-form
+npm run dev
+npm run dev
+npm run dev
+npm run dev
+npm run dev
