@@ -1,61 +1,54 @@
 "use client"
-import axios from "axios";
+import ReactDOM, { useFormState } from "react-dom";
+import React,{ useState,useEffect } from "react";
+import axios from "axios"
+import Day from "../../Components/Weekday";
+import ShiftRows from "@/Components/ShiftRows";
+import { AddMember,DeleteMember } from "@/Components/Button";
+import { TheNumberOfPersonProvider } from "@/Components/GlobalStates/TheNumberOfPerson";
 import { useRouter } from "next/router";
-import { useState } from "react";
-import {useForm} from "react-hook-form"
-///なぜかinputとbuttonの配置ができない。一旦後回し
+import axios_instance from "@/../plugins/axios";
 
-type FormData = {
-    username:string,
-    password:string
-}
+function ShiftTable(){
 
-function Login(){
+  const handleKeyDown = (event: React.KeyboardEvent<HTMLInputElement>) => {
+    if (event.key === "Enter"){
+      console.log("Enterが押されました")
+    }
+  };
 
-    const {
-        register,
-        handleSubmit
-    } = useForm();
+  const router = useRouter()
 
-    const [authError,setAuthError] = useState("");
-    const router = useRouter();
+  
 
-    const onSubmit = (event: any): void => {
-        ///console.log("dwda")
-        const data: FormData = {
-            username: event.username,
-            password: event.password,
-        };
-        handleLogin(data);
-    };
-
-    const handleLogin = (data:FormData) => {
-        console.log(`${data.username}`)
-        console.log(`${data.password}`)
-        axios
-            .post("http://127.0.0.1:8001/api/people/login/",data)
-            .then((response) => {
-                console.log("gggggggg");
-                router.push("http://127.0.0.1:8001/api/people/person/")
-            })
-            .catch(function(error){
-                console.log(error.response)
-                setAuthError("ユーザー名またはパスワードに誤りがあります")
-            });
-    };
-
-    return(
-    <div>
-        <div className="flex border">
-            <form onSubmit={handleSubmit(onSubmit)}>
-                <input type="text" className="border bg-gray-400"  {...register("username")}></input>
-                <input type="text" className="border bg-gray-400"  {...register("password")}></input>
-                <button className="border border-4 bg-blue-400 w-64" >ログイン</button>
-            </form>
+  /*useEffect(() => {
+    axios.get("http://127.0.0.1:8000/api/hello_db/backend/") ////api/hello/backendのみでは404が返ってくる。なぜ。
+    .then((res) => res.data)
+    .then((data) => {
+      setData(data)
+    })
+  },[])*/
+  
+  return (
+    <TheNumberOfPersonProvider>
+      <div tabIndex={0} onKeyDown={handleKeyDown}>
+        <Day />
+        <div>
+          <h1 className="bg-white w-full h-16 text-black text-left text-3xl">シフト表</h1>
         </div>
-        <div>{authError}</div>
-    </div>
-    )
+        <div className="flex justify-end gap-2">
+          <AddMember className="bg-blue-400 text-white px-4 py-2" />
+          <DeleteMember className="bg-red-400 text-white px-4 py-2" />
+        </div>
+        <table className="border-2 border-collapse table-fixed">
+          <tbody>
+            <ShiftRows />
+          </tbody>
+        </table>
+      <div></div> api...///
+      </div>
+    </TheNumberOfPersonProvider>
+  )
 }
 
-export default Login;
+export default ShiftTable;
