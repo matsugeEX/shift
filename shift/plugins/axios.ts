@@ -16,6 +16,7 @@ axios_instance.interceptors.request.use(
 );
 
 axios_instance.interceptors.response.use(
+    
     function(response){
         console.log("True")
         return response;
@@ -23,9 +24,6 @@ axios_instance.interceptors.response.use(
     function(error){
         console.log("False")
         const originalConfig = error.config;
-        console.log(error.response.status)
-        console.log(error.response)
-        
         if(
             error.response && error.response.status === 401 && !originalConfig.retry
         ){
@@ -40,6 +38,7 @@ axios_instance.interceptors.response.use(
             return axios_instance
                 .post("/api/people/retry/",{refresh:""})                 
                 .then((response) =>{
+                    console.log("you did refresh")
                     return axios_instance(originalConfig);
                 })
                 .catch(function(error){
@@ -47,8 +46,10 @@ axios_instance.interceptors.response.use(
                 });
         }else if(error.response && error.response.status !== 422){
             //認証エラーまたは業務エラー以外の場合は、適切な画面に移動
-            console.log(originalConfig)
-            return Promise.reject(error);
+            console.log("You failed!")
+            if (originalConfig.url !== "/api/people/login/"){
+                window.location.href = "../"
+            }
         }else{
             return Promise.reject(error);
         }

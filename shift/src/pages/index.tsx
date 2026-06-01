@@ -46,7 +46,6 @@ function Login(){
                 console.log("status:", error?.response?.status);
                 console.log("data:", error.response?.data);
                 console.log("config url:", error.config?.url);
-                console.log("toJSON:", error.toJSON());
 
                 console.log("===== LOGIN ERROR END =====");
 

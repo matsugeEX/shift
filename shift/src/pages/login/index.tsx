@@ -1,13 +1,13 @@
 "use client"
 import ReactDOM, { useFormState } from "react-dom";
 import React,{ useState,useEffect } from "react";
-import axios from "axios"
 import Day from "../../Components/Weekday";
 import ShiftRows from "@/Components/ShiftRows";
 import { AddMember,DeleteMember } from "@/Components/Button";
 import { TheNumberOfPersonProvider } from "@/Components/GlobalStates/TheNumberOfPerson";
 import { useRouter } from "next/router";
 import axios_instance from "@/../plugins/axios";
+import { redirect } from "next/dist/server/api-utils";
 
 function ShiftTable(){
 
@@ -17,7 +17,12 @@ function ShiftTable(){
     }
   };
 
-  const router = useRouter()
+  useEffect (()=>{
+    axios_instance.get("/api/people/person")
+                  .then(()=>{
+                    console.log("ok")
+                  })
+  },[])
 
   
 
