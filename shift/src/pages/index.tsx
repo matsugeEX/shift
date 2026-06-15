@@ -1,6 +1,6 @@
 import axios_instance from "@/../plugins/axios";
 //import axios from "axios";
-import { useRouter } from "next/navigation";
+import { useRouter } from "next/router";
 import { useState } from "react";
 import { useForm } from "react-hook-form"
 ///なぜかinputとbuttonの配置ができない。一旦後回し
@@ -11,11 +11,6 @@ type FormData = {
 }
 
 function Login(){
-    return (
-  <div>
-    <h1>HELLO VERCEL TEST</h1>
-  </div>
-)
     console.log(process.env.NEXT_PUBLIC_API_BASE_URL)
 
     const {
