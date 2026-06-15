@@ -11,6 +11,11 @@ type FormData = {
 }
 
 function Login(){
+    return (
+  <div>
+    <h1>HELLO VERCEL TEST</h1>
+  </div>
+)
     console.log(process.env.NEXT_PUBLIC_API_BASE_URL)
 
     const {
