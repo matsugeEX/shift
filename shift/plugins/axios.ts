@@ -1,9 +1,17 @@
 import axios from "axios";
 
-const axios_instance = axios.create({
+console.log("API URL:", process.env.NEXT_PUBLIC_API_BASE_URL);
+/*const axios_instance = axios.create({
     headers:{
         "Content-Type": "application/json",
     },
+});*/
+const axios_instance = axios.create({
+    baseURL: process.env.NEXT_PUBLIC_API_BASE_URL,
+    headers:{
+        "Content-Type": "application/json",
+    },
+    withCredentials: true,
 });
 
 axios_instance.interceptors.request.use(
