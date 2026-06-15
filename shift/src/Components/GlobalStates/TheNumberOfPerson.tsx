@@ -1,14 +1,28 @@
-import { createContext,useState } from "react";
+import { createContext, useState } from "react";
 
-export const TheNumberOfPersonContext = createContext({})
+type TheNumberOfPersonContextType = {
+    PersonNumber: number;
+    setNumber: React.Dispatch<React.SetStateAction<number>>;
+};
 
-export const TheNumberOfPersonProvider = props => {
-    const {children} = props
-    const [PersonNumber,setNumber] = useState(10) ///初期値
+export const TheNumberOfPersonContext =
+    createContext<TheNumberOfPersonContextType>({
+        PersonNumber: 10,
+        setNumber: () => {},
+    });
+
+export const TheNumberOfPersonProvider = (
+    props: { children: React.ReactNode }
+) => {
+    const { children } = props;
+
+    const [PersonNumber, setNumber] = useState(10);
 
     return (
-        <TheNumberOfPersonContext.Provider value = {{PersonNumber,setNumber}}>
+        <TheNumberOfPersonContext.Provider
+            value={{ PersonNumber, setNumber }}
+        >
             {children}
         </TheNumberOfPersonContext.Provider>
-    )
-}
+    );
+};
