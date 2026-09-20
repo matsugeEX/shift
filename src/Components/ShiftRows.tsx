@@ -21,49 +21,30 @@ type Props = {
   shiftResult: ShiftResult[];
 };
 
-/*const ShiftRows = () => {
+const TIME_HEADERS = Array.from(
+  { length: 11 },
+  (_, index) => `${10 + index}:00`
+);
 
-  const {PersonNumber} = useContext(TheNumberOfPersonContext)
+const TASK_COLORS: Record<ScheduleSlot["task"], string> = {
+  leader: "#f472b6",
+  register: "#9ca3af",
+  break: "#4ade80",
+  other: "#60a5fa",
+};
 
-  const [TimeState,setTimeState] = useState(
-    Array(140).fill(false)
-  )
+const TASK_LABELS: Record<ScheduleSlot["task"], string> = {
+  leader: "リーダー",
+  register: "レジ",
+  break: "休憩",
+  other: "その他",
+};
 
-  const ChangeCells = (index:number) => {
-  const newState = [...TimeState];
-  newState[index] = !TimeState[index];
-  setTimeState(newState);
-  };
-
-  const arrays:JSX.Element[] = []
-  for(let i = 0; i < PersonNumber; i++){
-      arrays[i] = [];
-      for(let j = 0; j < 140;j++){
-          arrays[i].push(
-          <td key = {j}
-              onClick={() => ChangeCells(i+j*140)}
-              className={`border w-4 h-16 ${TimeState[i+j*140] ? "bg-red-400" : "bg-blue-400"}`}>
-          </td>
-      )
-      }
-  }
-
-  const rows = []
-  for(let i = 0; i < PersonNumber;i++){
-  rows.push(
-  <tr key = {i}>
-      <td className = "border bg-gray-400 w-32 h-16">
-          <input type ="text" placeholder="名前を入力" className="bg-white text-black focus:outline-none placeholder:text-black-800"></input>
-      </td>
-      {arrays[i]}
-  </tr>
-  )
-  }
-  return rows
-}*/
-
-const ShiftRows = ({ workers, setWorkers, shiftResult = [] }: Props) =>{
-
+const ShiftRows = ({
+  workers,
+  setWorkers,
+  shiftResult = [],
+}: Props) => {
   const updateWorker = (
     index: number,
     key: keyof Worker,
@@ -81,74 +62,109 @@ const ShiftRows = ({ workers, setWorkers, shiftResult = [] }: Props) =>{
 
   return (
     <>
-      {workers.map((worker, index) => (
-        <tr key={index}>
-          <td className="border bg-gray-400 w-32 h-16">
-            <input
-              type="text"
-              value={worker.name}
-              onChange={(e) =>
-                updateWorker(index, "name", e.target.value)
-              }
-              placeholder="名前"
-              className="bg-white text-black focus:outline-none"
-            />
-          </td>
+      <tr className="bg-gray-100 text-black">
+        <th className="border px-2 py-2 text-center">
+          名前
+        </th>
 
-          <td className="border bg-gray-200">
-            <input
-              type="time"
-              value={worker.start}
-              onChange={(e) =>
-                updateWorker(index, "start", e.target.value)
-              }
-            />
-          </td>
+        <th className="border px-2 py-2 text-center">
+          開始
+        </th>
 
-          <td className="border bg-gray-200">
-            <input
-              type="time"
-              value={worker.end}
-              onChange={(e) =>
-                updateWorker(index, "end", e.target.value)
-              }
-            />
-          </td>
+        <th className="border px-2 py-2 text-center">
+          終了
+        </th>
 
-          <td className="border bg-gray-200 text-black">
-            <label>
-                <input
-                type="checkbox"
-                checked={worker.leader}
+        <th className="border px-2 py-2 text-center">
+          リーダー
+        </th>
+
+        {TIME_HEADERS.map((time) => (
+          <th
+            key={time}
+            colSpan={4}
+            className="border px-1 py-2 text-center text-xs font-medium"
+          >
+            {time}
+          </th>
+        ))}
+      </tr>
+
+      {workers.map((worker, index) => {
+        const workerSchedule = shiftResult.find(
+          (result) => result.name === worker.name
+        )?.schedule;
+
+        return (
+          <tr key={index}>
+            <td className="h-16 w-32 border bg-gray-200 px-2">
+              <input
+                type="text"
+                value={worker.name}
                 onChange={(e) =>
-                    updateWorker(index, "leader", e.target.checked)
+                  updateWorker(index, "name", e.target.value)
                 }
+                placeholder="名前"
+                aria-label={`${index + 1}人目の名前`}
+                className="w-full bg-white px-2 py-1 text-black placeholder:text-gray-500 focus:outline-none"
+              />
+            </td>
+
+            <td className="border bg-gray-100 px-2">
+              <input
+                type="time"
+                value={worker.start}
+                onChange={(e) =>
+                  updateWorker(index, "start", e.target.value)
+                }
+                aria-label={`${worker.name || index + 1}の勤務開始時刻`}
+                className="bg-white px-2 py-1 text-black"
+              />
+            </td>
+
+            <td className="border bg-gray-100 px-2">
+              <input
+                type="time"
+                value={worker.end}
+                onChange={(e) =>
+                  updateWorker(index, "end", e.target.value)
+                }
+                aria-label={`${worker.name || index + 1}の勤務終了時刻`}
+                className="bg-white px-2 py-1 text-black"
+              />
+            </td>
+
+            <td className="whitespace-nowrap border bg-gray-100 px-2 text-black">
+              <label className="flex items-center gap-1">
+                <input
+                  type="checkbox"
+                  checked={worker.leader}
+                  onChange={(e) =>
+                    updateWorker(
+                      index,
+                      "leader",
+                      e.target.checked
+                    )
+                  }
                 />
                 リーダー可
-            </label>
-          </td>
+              </label>
+            </td>
 
-        {shiftResult
-            .find((result) => result.name === worker.name)
-            ?.schedule.map((slot) => (
-                <td
+            {workerSchedule?.map((slot) => (
+              <td
                 key={slot.time}
-                title={`${slot.time} ${slot.task}`}
-                className="border w-4 h-16"
+                title={`${slot.time} ${TASK_LABELS[slot.task]}`}
+                aria-label={`${slot.time} ${TASK_LABELS[slot.task]}`}
+                className="h-16 min-w-4 border border-white"
                 style={{
-                    backgroundColor:
-                    slot.task === "leader"
-                        ? "#f472b6"
-                        : slot.task === "register"
-                        ? "#9ca3af"
-                        : slot.task === "break"
-                        ? "#4ade80"
-                        : "#60a5fa",
+                  backgroundColor: TASK_COLORS[slot.task],
                 }}
-                />
+              />
             ))}
-        </tr>
-      ))}
+          </tr>
+        );
+      })}
     </>
   );
 };
