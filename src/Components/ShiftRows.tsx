@@ -17,7 +17,9 @@ type ShiftResult = {
 
 type Props = {
   workers: Worker[];
-  setWorkers: React.Dispatch<React.SetStateAction<Worker[]>>;
+  setWorkers: React.Dispatch<
+    React.SetStateAction<Worker[]>
+  >;
   shiftResult: ShiftResult[];
 };
 
@@ -26,14 +28,20 @@ const TIME_HEADERS = Array.from(
   (_, index) => `${10 + index}:00`
 );
 
-const TASK_COLORS: Record<ScheduleSlot["task"], string> = {
+const TASK_COLORS: Record<
+  ScheduleSlot["task"],
+  string
+> = {
   leader: "#f472b6",
   register: "#9ca3af",
   break: "#4ade80",
   other: "#60a5fa",
 };
 
-const TASK_LABELS: Record<ScheduleSlot["task"], string> = {
+const TASK_LABELS: Record<
+  ScheduleSlot["task"],
+  string
+> = {
   leader: "リーダー",
   register: "レジ",
   break: "休憩",
@@ -102,7 +110,11 @@ const ShiftRows = ({
                 type="text"
                 value={worker.name}
                 onChange={(e) =>
-                  updateWorker(index, "name", e.target.value)
+                  updateWorker(
+                    index,
+                    "name",
+                    e.target.value
+                  )
                 }
                 placeholder="名前"
                 aria-label={`${index + 1}人目の名前`}
@@ -115,9 +127,15 @@ const ShiftRows = ({
                 type="time"
                 value={worker.start}
                 onChange={(e) =>
-                  updateWorker(index, "start", e.target.value)
+                  updateWorker(
+                    index,
+                    "start",
+                    e.target.value
+                  )
                 }
-                aria-label={`${worker.name || index + 1}の勤務開始時刻`}
+                aria-label={`${
+                  worker.name || `${index + 1}人目`
+                }の勤務開始時刻`}
                 className="bg-white px-2 py-1 text-black"
               />
             </td>
@@ -127,9 +145,15 @@ const ShiftRows = ({
                 type="time"
                 value={worker.end}
                 onChange={(e) =>
-                  updateWorker(index, "end", e.target.value)
+                  updateWorker(
+                    index,
+                    "end",
+                    e.target.value
+                  )
                 }
-                aria-label={`${worker.name || index + 1}の勤務終了時刻`}
+                aria-label={`${
+                  worker.name || `${index + 1}人目`
+                }の勤務終了時刻`}
                 className="bg-white px-2 py-1 text-black"
               />
             </td>
@@ -151,17 +175,29 @@ const ShiftRows = ({
               </label>
             </td>
 
-            {workerSchedule?.map((slot) => (
-              <td
-                key={slot.time}
-                title={`${slot.time} ${TASK_LABELS[slot.task]}`}
-                aria-label={`${slot.time} ${TASK_LABELS[slot.task]}`}
-                className="h-16 min-w-4 border border-white"
-                style={{
-                  backgroundColor: TASK_COLORS[slot.task],
-                }}
-              />
-            ))}
+            {workerSchedule?.map((slot) => {
+              const isWorkingTime =
+                worker.start <= slot.time &&
+                slot.time < worker.end;
+
+              const label = isWorkingTime
+                ? TASK_LABELS[slot.task]
+                : "勤務時間外";
+
+              return (
+                <td
+                  key={slot.time}
+                  title={`${slot.time} ${label}`}
+                  aria-label={`${slot.time} ${label}`}
+                  className="h-16 min-w-4 border border-white"
+                  style={{
+                    backgroundColor: isWorkingTime
+                      ? TASK_COLORS[slot.task]
+                      : "#e5e7eb",
+                  }}
+                />
+              );
+            })}
           </tr>
         );
       })}
